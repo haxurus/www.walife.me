@@ -48,7 +48,7 @@
       <a href="${projectUrl(p)}" data-cursor="VIEW">
         <span class="pj-lnum">${pad(i + 1)}</span>
         <div class="pj-media">
-          <img src="${p.img}" alt="" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async" draggable="false">
+          <img src="${p.img}" alt="${L(p.title)} – Walife" loading="${i < 4 ? 'eager' : 'lazy'}" decoding="async" draggable="false">
           <span class="pj-num"><b>${pad(i + 1)}</b> / ${yearOf(p)}</span>
           <span class="pj-go" aria-hidden="true">↗</span>
         </div>

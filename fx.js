@@ -37,7 +37,7 @@
   const L = (o) => (typeof o === 'string' ? o : (o[lang] || o[W.DEFAULT_LANG]));
 
   const artHTML = (p, eager) =>
-    `<div class="art"><img src="${p.img}" alt="" loading="${eager ? 'eager' : 'lazy'}" decoding="async" draggable="false"></div>`;
+    `<div class="art"><img src="${p.img}" alt="${L(p.title)} – Walife" loading="${eager ? 'eager' : 'lazy'}" decoding="async" draggable="false"></div>`;
   const hrefOf = (p) => p.url || `project.html?p=${encodeURIComponent(p.slug)}`;
   const yearOf = (p) => p.date.slice(0, 4);
   const pad = (n) => String(n).padStart(2, '0');

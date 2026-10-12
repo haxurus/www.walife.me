@@ -353,6 +353,43 @@
   /* ----------------------------------------------------------
      I18N
      ---------------------------------------------------------- */
+  /* per-project SEO: canonical, social tags, structured data */
+  function setTag(sel, attr, val) {
+    let el = $(sel);
+    if (!el) { el = document.createElement('meta'); document.head.append(el); }
+    el.setAttribute(attr[0], attr[1]);
+    el.content = val;
+  }
+  function seo() {
+    const base = 'https://www.thawalife.com/';
+    const url = `${base}project.html?p=${encodeURIComponent(P.slug)}`;
+    const title = `${L(P.title)} – ${L(P.tags)} | Walife`;
+    const img = base + P.img;
+    document.title = title;
+    const can = $('link[rel="canonical"]');
+    if (can) can.href = url;
+    setTag('meta[property="og:title"]', ['property', 'og:title'], title);
+    setTag('meta[property="og:description"]', ['property', 'og:description'], L(P.desc));
+    setTag('meta[property="og:url"]', ['property', 'og:url'], url);
+    setTag('meta[property="og:image"]', ['property', 'og:image'], img);
+    setTag('meta[name="twitter:title"]', ['name', 'twitter:title'], title);
+    setTag('meta[name="twitter:description"]', ['name', 'twitter:description'], L(P.desc));
+    setTag('meta[name="twitter:image"]', ['name', 'twitter:image'], img);
+    let ld = $('#ld-project');
+    if (!ld) { ld = document.createElement('script'); ld.type = 'application/ld+json'; ld.id = 'ld-project'; document.head.append(ld); }
+    ld.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      name: L(P.title),
+      description: L(P.desc),
+      url,
+      image: img,
+      dateCreated: P.date,
+      inLanguage: lang,
+      creator: { '@type': 'Person', name: 'Federico', alternateName: 'Walife', url: base + 'about.html' }
+    });
+  }
+
   function applyLang() {
     document.documentElement.lang = lang;
     $$('[data-i18n]').forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
@@ -361,11 +398,11 @@
     textEls.forEach(({ el, b, key }) => { el.textContent = key ? t(key) : L(b); });
 
     if (P) {
-      document.title = `${L(P.title)} – Walife`;
       $('#pg-title').textContent = L(P.title);
       $('#pg-idx').textContent = t('pgIdx', { n: pad(idx + 1), t: pad(N) });
       const md = $('meta[name="description"]');
       if (md) md.content = L(P.desc);
+      seo();
       renderMeta();
     } else {
       document.title = `${t('pgNotFound')} – Walife`;
