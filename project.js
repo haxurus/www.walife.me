@@ -183,6 +183,23 @@
     return box;
   }
 
+  /* Instagram posts embedded directly (official /embed iframe, loaded lazily) */
+  function renderInstagram(b) {
+    const wrap = document.createElement('div');
+    wrap.className = 'pg-igrid pg-block' + (b.ids.length === 1 ? ' single' : '');
+    b.ids.forEach((id) => {
+      const f = document.createElement('iframe');
+      f.className = 'pg-ig';
+      f.src = `https://www.instagram.com/p/${id}/embed`;
+      f.loading = 'lazy';
+      f.title = 'Instagram';
+      f.setAttribute('scrolling', 'no');
+      f.allowFullscreen = true;
+      wrap.append(f);
+    });
+    return wrap;
+  }
+
   /* grid of secondary videos; vertical ones (Shorts) get their own centered row */
   function renderYtGrid(b) {
     const wrap = document.createElement('div');
@@ -320,6 +337,7 @@
         case 'video': node = renderVideo(b); break;
         case 'youtube': node = renderYoutube(b); break;
         case 'ytgrid': node = renderYtGrid(b); break;
+        case 'instagram': node = renderInstagram(b); break;
         case 'book': node = renderBook(b); break;
         default: break;
       }

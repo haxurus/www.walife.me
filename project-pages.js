@@ -1044,5 +1044,84 @@ window.WALIFE.PAGES = {
         ]
       }
     ]
+  },
+  "octopus-brand-collab": {
+    "links": [],
+    "blocks": [
+      {
+        "type": "p",
+        "it": "Dal 2024 al 2026 ho collaborato con Octopus Brand, il marchio di streetwear che ha portato il proprio immaginario, fatto di tentacoli, grafiche tribali e silhouette oversize, anche nel mondo virtuale. Il mio ruolo è stato tradurre quell’identità in artwork, contenuti social e video, per farla vivere sia nei feed sia dentro la realtà virtuale.",
+        "en": "From 2024 to 2026 I collaborated with Octopus Brand, the streetwear label that brought its imagery of tentacles, tribal graphics and oversized silhouettes into the virtual world as well. My role was to translate that identity into artworks, social content and videos, so it could live both on feeds and inside virtual reality."
+      },
+      {
+        "type": "label",
+        "it": "Ruolo: art direction digitale, grafica social, video edit, moda digitale",
+        "en": "Role: digital art direction, social graphics, video edits, digital fashion"
+      },
+      {
+        "type": "p",
+        "it": "Il lavoro è nato nell’ambito dell’attività con Youth S.r.l. a Milano, dove mi occupo di modellazione 3D, asset digitali, capi virtuali e strategie di brand expansion digitale. Ogni progetto della collaborazione ha seguito lo stesso filo: partire dai capi e dalle grafiche del brand e metterli in scena in ambienti e pose pensati per essere condivisi.",
+        "en": "The work grew out of my activity with Youth S.r.l. in Milan, where I work on 3D modeling, digital assets, virtual garments and digital brand expansion strategies. Every project in the collaboration followed the same thread: start from the brand’s garments and graphics and stage them in environments and poses designed to be shared."
+      },
+      {
+        "type": "h",
+        "it": "Artworks 2025",
+        "en": "Artworks 2025"
+      },
+      {
+        "type": "p",
+        "it": "Una serie di artwork pensati per i canali social del brand. Luce, ambientazione e composizione cambiano da uno scatto all’altro, ma il linguaggio resta riconoscibile: capi in primo piano, palette controllata e un’atmosfera da lookbook digitale.",
+        "en": "A series of artworks designed for the brand’s social channels. Light, setting and composition change from shot to shot, but the language stays recognizable: garments up front, a controlled palette and a digital lookbook mood."
+      },
+      {
+        "type": "instagram",
+        "ids": [
+          "DFaXV1xN4pO",
+          "DGDQDfoteK5",
+          "C7ltQ_yNImp"
+        ]
+      },
+      {
+        "type": "h",
+        "it": "Diario Be You 2026",
+        "en": "Diario Be You 2026"
+      },
+      {
+        "type": "p",
+        "it": "Per Diario Be You 2026, nato dalla collaborazione con Octopus Brand, ho realizzato l’artwork pensato per accompagnare il progetto e raccontarne lo spirito sui social.",
+        "en": "For Diario Be You 2026, born from the collaboration with Octopus Brand, I created the artwork designed to accompany the project and tell its spirit on social media."
+      },
+      {
+        "type": "instagram",
+        "ids": [
+          "DLpv0optyPo"
+        ]
+      },
+      {
+        "type": "h",
+        "it": "Summer Sales 2025",
+        "en": "Summer Sales 2025"
+      },
+      {
+        "type": "p",
+        "it": "Due videoclip promozionali in formato verticale per la campagna dei saldi estivi. Montaggio ritmato, tagli sul beat e dettagli sui capi, pensati per funzionare nei primi secondi di uno scroll.",
+        "en": "Two vertical promo clips for the summer sales campaign. Rhythmic editing, cuts on the beat and close-ups on the garments, designed to work in the first seconds of a scroll."
+      },
+      {
+        "type": "ytgrid",
+        "items": [
+          {
+            "id": "xFjnPV5ftp4",
+            "title": "Summer Sales 2025 – 01",
+            "vertical": true
+          },
+          {
+            "id": "vGC49fRv478",
+            "title": "Summer Sales 2025 – 02",
+            "vertical": true
+          }
+        ]
+      }
+    ]
   }
 };

@@ -58,6 +58,18 @@ window.WALIFE = {
       }
     },
     {
+      slug: 'octopus-brand-collab',
+      cats: ['events', 'vr', 'motion'],
+      title: 'Octopus Brand Collab',
+      date: '2026-04-30',
+      img: 'img/projects/octopus-brand-collab.webp',
+      tags: { it: 'Eventi / VR Integrated Works / Video edit', en: 'Events / VR Integrated Works / Video edits' },
+      desc: {
+        it: 'Una collaborazione tra Walife e Octopus Brand, dal 2024 al 2026: artwork, contenuti social, video promozionali e moda digitale nella realtà virtuale.',
+        en: 'A collaboration between Walife and Octopus Brand, from 2024 to 2026: artworks, social content, promo videos and digital fashion in virtual reality.'
+      }
+    },
+    {
       slug: 'visual-experiments-2',
       cats: ['experiments'],
       title: 'Visual Experiments #2',
