@@ -35,10 +35,10 @@
     return v === undefined ? '' : v;
   };
   const L = (o) => (typeof o === 'string' ? o : (o[lang] || o[W.DEFAULT_LANG]));
-  const projectUrl = (p) => `project.html?p=${encodeURIComponent(p.slug)}`;
+  const projectUrl = (p) => `p/${encodeURIComponent(p.slug)}.html`;
   const yearOf = (p) => p.date.slice(0, 4);
 
-  const slug = new URLSearchParams(location.search).get('p');
+  const slug = window.WALIFE_SLUG || new URLSearchParams(location.search).get('p');
   const idx = PROJECTS.findIndex((p) => p.slug === slug);
   const P = PROJECTS[idx];
   const PAGE = P ? (PAGES[P.slug] || { links: [], blocks: [] }) : null;
@@ -380,7 +380,7 @@
   }
   function seo() {
     const base = 'https://www.thawalife.com/';
-    const url = `${base}project.html?p=${encodeURIComponent(P.slug)}`;
+    const url = `${base}p/${encodeURIComponent(P.slug)}.html`;
     const title = `${L(P.title)} – ${L(P.tags)} | Walife`;
     const img = base + P.img;
     document.title = title;

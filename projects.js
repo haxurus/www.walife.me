@@ -36,7 +36,7 @@
   const L = (o) => (typeof o === 'string' ? o : (o[lang] || o[W.DEFAULT_LANG]));
 
   /* Dedicated project pages: one page per project, addressed by slug */
-  const projectUrl = (p) => p.url || `project.html?p=${encodeURIComponent(p.slug)}`;
+  const projectUrl = (p) => p.url || `p/${encodeURIComponent(p.slug)}.html`;
   const yearOf = (p) => p.date.slice(0, 4);
 
   /* ----------------------------------------------------------

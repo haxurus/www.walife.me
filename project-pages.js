@@ -1060,8 +1060,8 @@ window.WALIFE.PAGES = {
       },
       {
         "type": "p",
-        "it": "Il lavoro è nato nell’ambito dell’attività con Youth S.r.l. a Milano, dove mi occupo di modellazione 3D, asset digitali, capi virtuali e strategie di brand expansion digitale. Ogni progetto della collaborazione ha seguito lo stesso filo: partire dai capi e dalle grafiche del brand e metterli in scena in ambienti e pose pensati per essere condivisi.",
-        "en": "The work grew out of my activity with Youth S.r.l. in Milan, where I work on 3D modeling, digital assets, virtual garments and digital brand expansion strategies. Every project in the collaboration followed the same thread: start from the brand’s garments and graphics and stage them in environments and poses designed to be shared."
+        "it": "Il lavoro è nato dalla collaborazione con Youth S.R.L. a Milano, dove mi sono occupato di modellazione 3D, progettazione di assets digitali e strategie di brand expansion digitale. Siamo partiti dai capi e dalle grafiche del brand per metterli in scena in ambienti e pose pensate.",
+        "en": "The work grew out of the collaboration with Youth S.R.L. in Milan, where I worked on 3D modeling, digital asset design and digital brand expansion strategies. We started from the brand’s garments and graphics to stage them in carefully designed environments and poses."
       },
       {
         "type": "h",
@@ -1088,8 +1088,8 @@ window.WALIFE.PAGES = {
       },
       {
         "type": "p",
-        "it": "Per Diario Be You 2026, nato dalla collaborazione con Octopus Brand, ho realizzato l’artwork pensato per accompagnare il progetto e raccontarne lo spirito sui social.",
-        "en": "For Diario Be You 2026, born from the collaboration with Octopus Brand, I created the artwork designed to accompany the project and tell its spirit on social media."
+        "it": "Per Diario Be You 2026, nato dalla collaborazione con Octopus Brand, ho realizzato degli artwork pensati per accompagnare il progetto e raccontarne la mia esperienza.",
+        "en": "For Diario Be You 2026, born from the collaboration with Octopus Brand, I created artworks designed to accompany the project and tell my experience of it."
       },
       {
         "type": "instagram",
@@ -1104,8 +1104,8 @@ window.WALIFE.PAGES = {
       },
       {
         "type": "p",
-        "it": "Due videoclip promozionali in formato verticale per la campagna dei saldi estivi. Montaggio ritmato, tagli sul beat e dettagli sui capi, pensati per funzionare nei primi secondi di uno scroll.",
-        "en": "Two vertical promo clips for the summer sales campaign. Rhythmic editing, cuts on the beat and close-ups on the garments, designed to work in the first seconds of a scroll."
+        "it": "Due videoclip prodotte per i Summer Sales 2025 del brand pensate per i social.",
+        "en": "Two video clips produced for the brand’s Summer Sales 2025, made for social media."
       },
       {
         "type": "ytgrid",

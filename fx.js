@@ -38,7 +38,7 @@
 
   const artHTML = (p, eager) =>
     `<div class="art"><img src="${p.img}" alt="${L(p.title)} – Walife" loading="${eager ? 'eager' : 'lazy'}" decoding="async" draggable="false"></div>`;
-  const hrefOf = (p) => p.url || `project.html?p=${encodeURIComponent(p.slug)}`;
+  const hrefOf = (p) => p.url || `p/${encodeURIComponent(p.slug)}.html`;
   const yearOf = (p) => p.date.slice(0, 4);
   const pad = (n) => String(n).padStart(2, '0');
 
