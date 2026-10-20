@@ -183,6 +183,45 @@
     return box;
   }
 
+  /* horizontal scrolling gallery: snap + drag with the mouse, images open the lightbox */
+  function renderSlider(b) {
+    const wrap = document.createElement('div');
+    wrap.className = 'pg-slider pg-block';
+    const track = document.createElement('div');
+    track.className = 'pg-slider-track';
+    const base = lbList.length;
+    b.items.forEach((it, k) => {
+      lbList.push({ src: it.src, w: it.w, h: it.h });
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'pg-slide';
+      btn.dataset.cursor = 'ZOOM';
+      btn.style.aspectRatio = `${it.w} / ${it.h}`;
+      btn.innerHTML = `<img src="${it.src}" width="${it.w}" height="${it.h}" alt="" loading="lazy" decoding="async" draggable="false">`;
+      btn.addEventListener('click', () => { if (!track.dataset.moved) openLightbox(lbList, base + k); });
+      track.append(btn);
+    });
+    let down = false, sx = 0, sl = 0;
+    track.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse') return;
+      down = true; sx = e.clientX; sl = track.scrollLeft; delete track.dataset.moved;
+      track.classList.add('drag');
+    });
+    window.addEventListener('pointermove', (e) => {
+      if (!down) return;
+      const dx = e.clientX - sx;
+      if (Math.abs(dx) > 5) track.dataset.moved = '1';
+      track.scrollLeft = sl - dx;
+    });
+    window.addEventListener('pointerup', () => {
+      if (!down) return;
+      down = false; track.classList.remove('drag');
+      setTimeout(() => { delete track.dataset.moved; }, 0);
+    });
+    wrap.append(track);
+    return wrap;
+  }
+
   /* Instagram posts embedded directly (official /embed iframe, loaded lazily) */
   function renderInstagram(b) {
     const wrap = document.createElement('div');
@@ -337,6 +376,7 @@
         case 'video': node = renderVideo(b); break;
         case 'youtube': node = renderYoutube(b); break;
         case 'ytgrid': node = renderYtGrid(b); break;
+        case 'slider': node = renderSlider(b); break;
         case 'instagram': node = renderInstagram(b); break;
         case 'book': node = renderBook(b); break;
         default: break;

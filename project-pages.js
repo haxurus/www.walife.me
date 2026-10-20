@@ -1121,6 +1121,41 @@ window.WALIFE.PAGES = {
             "vertical": true
           }
         ]
+      },
+      {
+        "type": "h",
+        "it": "Altri artwork",
+        "en": "More artworks"
+      },
+      {
+        "type": "slider",
+        "items": [
+          {
+            "src": "img/projects/octopus-brand-collab/01.webp",
+            "w": 575,
+            "h": 768
+          },
+          {
+            "src": "img/projects/octopus-brand-collab/02.webp",
+            "w": 575,
+            "h": 768
+          },
+          {
+            "src": "img/projects/octopus-brand-collab/03.webp",
+            "w": 768,
+            "h": 768
+          },
+          {
+            "src": "img/projects/octopus-brand-collab/04.webp",
+            "w": 575,
+            "h": 768
+          },
+          {
+            "src": "img/projects/octopus-brand-collab/05.webp",
+            "w": 768,
+            "h": 768
+          }
+        ]
       }
     ]
   }
